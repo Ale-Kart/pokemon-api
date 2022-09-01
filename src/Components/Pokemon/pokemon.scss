@@ -1,0 +1,165 @@
+.pokemon-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.modal-pokemon {
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 999;
+}
+.modal-pokemon_content {
+	border-radius: 10px;
+	overflow: hidden;
+	position: fixed;
+	background-color: #fff;
+	padding: 10px;
+	width: 80%;
+	height: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	transition: all 5s;
+}
+#modal-open {
+	display: block;
+}
+#modal-closed {
+	display: none;
+}
+.modal-body {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 3em;
+	position: relative;
+	padding: 10px 20px;
+	&::after {
+		position: absolute;
+		width: 250px;
+		height: 610px;
+		content: "";
+		background-color: #db6363;
+		z-index: -1;
+		left: -2em;
+	}
+}
+.modal-column:first-child {
+	width: 25%;
+}
+.modal-pokemon_name {
+	text-transform: capitalize;
+	font-size: 30px;
+	margin: 0 0 20px 0;
+}
+
+.modal-pokemon_type {
+	padding: 5px 20px;
+	background-color: #dbdbdb85;
+	color: #959595;
+	font-weight: bold;
+	text-transform: capitalize;
+	border-radius: 6px;
+	margin-right: 5px;
+}
+.modal-pokemon_info {
+	list-style: none;
+	padding: 0;
+	li {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.modal-head {
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+}
+
+.btn-close-modal {
+	border: none;
+	background-color: transparent;
+	color: #555;
+	font-family: "Nunito sans";
+	cursor: pointer;
+}
+.modal-pokemon#modal-open {
+	// animation: ModalOpen 0.8s forwards;
+}
+.modal-pokemon#modal-closed {
+	// animation: ModalClose 0.8s forwards;
+}
+
+@keyframes ModalOpen {
+	// 0% {
+	// 	opacity: 0;
+	// 	transform: translate(-50%, -50%) scale(0);
+	// }
+	// 50% {
+	// 	transform: translate(-50%, -50%) scale(1.2);
+	// }
+	// 70% {
+	// 	transform: translate(-50%, -50%) scale(0.95);
+	// }
+	// 95% {
+	// 	transform: translate(-50%, -50%) scale(1.1);
+	// }
+	// 100% {
+	// 	opacity: 1;
+	// 	transform: translate(-50%, -50%) scale(1);
+	// }
+}
+
+@keyframes ModalClose {
+	// 100% {
+	// 	transform: translate(-50%, -50%) scale(0);
+	// }
+	// 50% {
+	// 	transform: translate(-50%, -50%) scale(1.2);
+	// }
+	// 30% {
+	// 	transform: translate(-50%, -50%) scale(0.95);
+	// }
+	// 5% {
+	// 	transform: translate(-50%, -50%) scale(1.1);
+	// }
+	// 0% {
+	// 	transform: translate(-50%, -50%) scale(1);
+	// }
+}
+
+.pokemon-controllers {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
+	margin: 20px 0px;
+}
+
+.btn {
+	border: none;
+	background-color: #d74a4a;
+	padding: 5px 20px;
+	font-family: "Nunito sans";
+	color: #fff;
+	border-radius: 4px;
+	width: 100%;
+	font-size: 25px;
+	cursor: pointer;
+	transition: all 0.5s;
+	&:hover {
+		transform: scale(1.02);
+	}
+}
+
+
+senha iti itau : 014603, senha do cartao : 1463
